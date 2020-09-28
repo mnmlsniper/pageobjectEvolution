@@ -1,0 +1,40 @@
+{
+  "name": "pageobjectevolution",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jest.config.local.js --colors --testTimeout=50000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnmlsniper/pageobjectEvolution.git"
+  },
+  "keywords": [
+    "jest",
+    "playwright",
+    "pom",
+    "pageobject",
+    "page",
+    "object",
+    "test",
+    "framework"
+  ],
+  "author": "mnmlsniper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnmlsniper/pageobjectEvolution/issues"
+  },
+  "homepage": "https://github.com/mnmlsniper/pageobjectEvolution#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@jest/globals": "^26.4.2",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.0.2",
+    "faker": "^5.1.0",
+    "jest-cli": "^26.4.2",
+    "playwright": "^1.4.1"
+  }
+}
