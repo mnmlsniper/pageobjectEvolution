@@ -8,7 +8,7 @@ test('first version', async () => {
   const randomEmail = faker.internet.email(); // Ewell.Cremin20@hotmail.com
   const randomPassword = faker.internet.password(); //qxEBWLY7QJPeqcI
 
-  const browser = await playwright.chromium.launch({ headless: true });
+  const browser = await playwright.chromium.launch({ headless: false });
   const page = await browser.newPage();
 
   await page.goto('https://try.vikunja.io/');
