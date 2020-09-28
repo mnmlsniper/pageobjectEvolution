@@ -1,28 +1,27 @@
-import playwright from 'playwright';
 import {afterEach, beforeEach, test} from "@jest/globals";
-import MainPage from '../step2/mainPage';
-import RegPage from '../step2/regPage';
 
+import {MainPage} from '../step5/mainPage';
+import {RegPage} from '../step5/regPage';
+
+import {goto, run, stop} from "../step5/browser";
 
 const faker = require('faker');
-let browser;
 let page;
 
 describe('Авторизация', () => {
     beforeEach(async () => {
-        browser = await playwright.chromium.launch({headless: true});
-        page = await browser.newPage();
-        await page.goto('https://try.vikunja.io/');
+        await run();
+        page = await goto('https://try.vikunja.io/');
     });
     afterEach(async () => {
-        //  await page.close();
-        await browser.close();
+        await stop();
     });
-    test('function', async () => {
-        await MainPage.clickReg(page);
 
+    test('class', async () => {
+        let mainPage = new MainPage(page);
+        await mainPage.clickReg();
         //todo assert
-        const pageTitle = await page.title();
+        const pageTitle = await mainPage.title();
         expect(pageTitle).toContain('Register | Vikunja');
     });
     test('function RegPage', async () => {
@@ -30,9 +29,11 @@ describe('Авторизация', () => {
         const randomName = faker.name.findName(); // Leticia Hauck
         const randomEmail = faker.internet.email(); // Ewell.Cremin20@hotmail.com
         const randomPassword = faker.internet.password(); //qxEBWLY7QJPeqcI
+        let mainPage = new MainPage(page);
+        let regPage = new RegPage(page);
 
-        await MainPage.clickReg(page);
-        await RegPage.reg(page, randomName, randomEmail, randomPassword);
+        await mainPage.clickReg();
+        await regPage.reg(randomName, randomEmail, randomPassword);
         //todo assert
         const pageTitle = await page.title();
         expect(pageTitle).toContain('Register | Vikunja');
