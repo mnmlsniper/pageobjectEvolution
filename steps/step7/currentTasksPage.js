@@ -1,8 +1,8 @@
-import {BasePage} from '../step8/basePage';
+import {BasePage} from './basePage';
 
 class CurrentTasksPage extends BasePage {
-    constructor(page, pageRootSelector = 'currentsTasksPage') {
-        super(page, pageRootSelector);
+    constructor(page) {
+        super();
         this.page = page;
         this.profileName = ('.user > .dropdown > .dropdown-trigger > .button > .username');
     }

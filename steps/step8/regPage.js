@@ -1,8 +1,8 @@
-import {BasePage} from '../step6/basePage';
+import {BasePage} from './basePage';
 
 class RegPage extends BasePage {
-    constructor(page) {
-        super();
+    constructor(page, pageRootSelector = 'registrationPage') {
+        super(page, pageRootSelector);
         this.page = page;
         this.emailField = '#email';
         this.passwordField = '#password1';

@@ -1,10 +1,10 @@
 import {afterEach, beforeEach, test} from "@jest/globals";
 
-import {CurrentTasksPage} from '../step6/currentTasksPage';
-import {MainPage} from '../step6/mainPage';
-import {RegPage} from '../step6/regPage';
+import {CurrentTasksPage} from '../steps/step6/currentTasksPage';
+import {MainPage} from '../steps/step6/mainPage';
+import {RegPage} from '../steps/step6/regPage';
 
-import {goto, run, stop} from "../step6/browser";
+import {goto, run, stop} from "../steps/step6/browser";
 import accounts from '../data/step6/accounts.json';
 
 import BuildUser from '../data/step6/buildUser';

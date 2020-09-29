@@ -1,9 +1,9 @@
 import {afterEach, beforeEach, test} from "@jest/globals";
 
-import {MainPage} from '../step5/mainPage';
-import {RegPage} from '../step5/regPage';
+import {MainPage} from '../steps/step5/mainPage';
+import {RegPage} from '../steps/step5/regPage';
 
-import {goto, run, stop} from "../step5/browser";
+import {goto, run, stop} from "../steps/step5/browser";
 
 const faker = require('faker');
 let page;

@@ -1,8 +1,8 @@
 import {afterEach, beforeEach, describe, test} from "@jest/globals";
-import MainPage from '../step3/mainPage';
-import RegPage from '../step3/regPage';
+import MainPage from '../steps/step3/mainPage';
+import RegPage from '../steps/step3/regPage';
 const faker = require('faker');
-import {goto, run, stop} from '../step3/browser';
+import {goto, run, stop} from '../steps/step3/browser';
 
 let page;
 //todo fail(   TypeError: Cannot read property 'click' of undefined

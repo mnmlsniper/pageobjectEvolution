@@ -1,7 +1,7 @@
 import playwright from 'playwright';
 import {afterEach, beforeEach, test} from "@jest/globals";
-import MainPage from '../step2/mainPage';
-import RegPage from '../step2/regPage';
+import MainPage from '../steps/step2/mainPage';
+import RegPage from '../steps/step2/regPage';
 
 
 const faker = require('faker');

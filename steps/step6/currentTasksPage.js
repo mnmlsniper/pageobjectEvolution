@@ -1,4 +1,4 @@
-import {BasePage} from '../step6/basePage';
+import {BasePage} from './basePage';
 
 class CurrentTasksPage extends BasePage {
     constructor(page) {

@@ -1,4 +1,4 @@
-import {BasePage} from '../step7/basePage';
+import {BasePage} from './basePage';
 
 class RegPage extends BasePage {
     constructor(page) {
