@@ -1,0 +1,14 @@
+{
+  "demo": [
+    {
+      "username" : "demo",
+      "password": "demo"
+    }
+  ],
+  "cleanUser": [
+    {
+      "username" : "mnmlsniper",
+      "password": "q12345"
+    }
+  ]
+}
